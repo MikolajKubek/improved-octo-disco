@@ -26,8 +26,8 @@ class VideoCamera(object):
             self.frame_processor.process_frame(frame)
 
         processed_frame = self.frame_processor.get_frame()
-        if processed_frame:
-            print(processed_frame)
+        if processed_frame is not None:
+            frame = processed_frame
 
         ret, jpeg = cv2.imencode('.jpg', frame)
 
