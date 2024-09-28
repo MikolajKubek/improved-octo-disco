@@ -21,7 +21,10 @@ python -m venv .venv
 pip install flask
 ```
 
-4. Run flask in debug mode
+4. Install [mmdet](https://mmpose.readthedocs.io/en/latest/installation.html) according to the instructions
+
+
+5. Run flask in debug mode
 ```console
 flask --app main --debug run
 ```
